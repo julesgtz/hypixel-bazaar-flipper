@@ -38,19 +38,18 @@ class ForgeApp(App):
 
         table.add_column("Name")
         table.add_column("Liquidity")
+        table.add_column("Marge")
         table.add_column("Buy Price")
         table.add_column("Sell Price")
         table.add_column("Buy 7d")
         table.add_column("Sell 7d")
-        table.add_column("Marge")
         table.add_column("Marge %")
         table.add_column("Score")
 
         for item in items:
             if (
                 not int(item.get("liquidity", 0)) > 30000
-                or
-                not int(item.get("sell_price", 0)) > 1000
+                or not int(item.get("sell_price", 0)) > 1000
             ):
                 continue
             name = item.get("name", "Unknown")
@@ -66,11 +65,11 @@ class ForgeApp(App):
             table.add_row(
                 name,
                 liquidity,
+                marge,
                 buy_price,
                 sell_price,
                 instabuy,
                 instasell,
-                marge,
                 marge_pct,
                 score,
             )
