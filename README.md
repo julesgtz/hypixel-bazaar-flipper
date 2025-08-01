@@ -27,7 +27,7 @@ This project **does not automate** any buying or selling. Instead, it ranks Baza
 > Using this tool consistently has allowed me to manually generate over **1 billion coins** in-game through optimized flipping strategies.
 
 <div align="center"> 
-    <img src="./assets/1b.png" alt="Console" width="50%"/>
+    <img src="./assets/1B.png" alt="Console" width="50%"/>
 </div>
 
 ---
